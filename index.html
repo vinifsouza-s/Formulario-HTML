@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
     <title>Formulário</title>
 </head>
 <body>
     <div class="form">
         <form action="">
             <fieldset>
-                <legend><b>Formulário de Clientes</b></legend><br>
+                <legend><b>Formulário</b></legend><br>
                     <h2>Cadastro</h2><br><br>
                             <div>
                                 <label for="nome">Nome Completo:</label>
@@ -33,6 +34,13 @@
                                     <input type="text" placeholder="147.147.147-00"><br><br>
                             </div>
                             <div>
+                                <p>Estado Civil</p>
+                                    <input type="radio" value="Casado" id="casado" name="estadocivil">
+                                <label for="casado">Casado</label>
+                                    <input type="radio" value="Solteiro" id="solteiro" name="estadocivil">
+                                <label for="solteiro">Solteiro</label>
+                            </div>
+                            <div>
                                 <p>Sexo:</p> &nbsp;
                                     <label for="mas">Masculino</label> 
                                         <input type="radio" name="opcao" id="opt1">
@@ -42,8 +50,15 @@
                                         <input type="radio" name="opcao" id="opt1"><br><br>
                             </div>
                             <div>
-                                <label for="data_nascimento"><br><br>Ano de Nascimento: </label>
-                                <input type="date" name="data_nascimento" id="data_nascimento">
+                                    <label for="data_nascimento"><br><br>Ano de Nascimento: </label>
+                                        <input type="date" name="data_nascimento" id="data_nascimento">
+                            </div>
+                            <div>
+                                    <label for="sobre">Fale sobre você</label>
+                            </div>
+                            <div>
+                                <textarea name="sobre" id="sobre" cols="30" rows="5" placeholder="Descreva as suas habilidades"
+                                    autocomplete="off"></textarea>
                             </div>    
                     <h2>Endereço</h2><br><br>
                            <div>
